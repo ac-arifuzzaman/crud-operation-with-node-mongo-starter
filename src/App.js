@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import AddUser from "./components/AddUser/AddUser";
+import Header from './components/Header/Header';
 import Home from "./components/Home/Home";
 import UpdateUser from "./components/UpdateUser/UpdateUser";
 import Users from "./components/Users/Users";
-import Header from './components/Header/Header';
 
 function App() {
   return (
@@ -18,9 +18,6 @@ function App() {
             </Route>
             <Route exact path="/users">
               <Users></Users>
-            </Route>
-            <Route path="/users/add">
-              <AddUser></AddUser>
             </Route>
             <Route path="/users/add">
               <AddUser></AddUser>
