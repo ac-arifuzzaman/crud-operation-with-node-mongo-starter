@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 const UpdateUser = () => {
   const [user, setUser] = useState({});
   const { id } = useParams();
-
+  // fetch for update
   useEffect(() => {
     const url = `http://localhost:3030/users/${id}`;
     fetch(url)
